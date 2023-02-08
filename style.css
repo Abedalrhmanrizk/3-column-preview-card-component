@@ -63,9 +63,6 @@ html {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--Very-light-gray);
 }
 img {
@@ -94,7 +91,6 @@ p {
 }
 .contanier {
   display: grid;
-
   margin: auto;
   border-radius: 0.8rem;
   overflow: hidden;
