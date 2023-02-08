@@ -30,7 +30,6 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: var(--Transparent-white);
 }
 
 img,
@@ -67,6 +66,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--Very-light-gray);
 }
 img {
   width: 6.4rem;
@@ -100,6 +100,7 @@ p {
   overflow: hidden;
   max-width: 307px;
   grid-template-columns: 1fr;
+  margin-top: 8.8rem;
 }
 
 .one,
@@ -155,10 +156,9 @@ a:hover {
 
 @media (min-width: 992px) {
   .contanier {
-    /* max-width: 307px;
-    grid-template-columns: 1fr; */
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 920px;
+    margin-top: 17.1rem;
   }
   p {
     margin-bottom: 8.3rem;
