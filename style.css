@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Clolor */
+  --Bright-orange: #e38826;
+  --Dark-cyan: #006970;
+  --Very-dark-cyan: #004241;
+  --Transparent-white: #ffffffbf;
+  --Very-light-gray: #f2f2f2;
+
+  /* Fonts */
+  --font-heading: "Big Shoulders Display", cursive;
+  --font-paragraph: "Lexend Deca", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: auto;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+img {
+  width: 6.4rem;
+  height: 4rem;
+  margin-bottom: 3.5rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: var(--Very-light-gray);
+  margin-bottom: 2.5rem;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  opacity: 0.75;
+  margin-bottom: 2.5rem;
+}
+.contanier {
+  display: grid;
+
+  margin: auto;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  max-width: 307px;
+  grid-template-columns: 1fr;
+}
+
+.one,
+.two,
+.three {
+  padding: 4.8rem;
+}
+
+a {
+  text-decoration: none;
+  padding: 1.1rem 3.15rem;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  display: inline-block;
+  border-radius: 2.5rem;
+  background-color: var(--Very-light-gray);
+  border: 1px solid #fff;
+  height: 4.8rem;
+  transition: all 0.5s;
+}
+
+.one {
+  background-color: var(--Bright-orange);
+}
+
+.two {
+  background-color: var(--Dark-cyan);
+}
+
+.three {
+  background-color: var(--Very-dark-cyan);
+}
+
+.one a {
+  color: var(--Bright-orange);
+}
+
+.two a {
+  color: var(--Dark-cyan);
+}
+
+.three a {
+  color: var(--Very-dark-cyan);
+}
+
+a:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .contanier {
+    /* max-width: 307px;
+    grid-template-columns: 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 920px;
+  }
+  p {
+    margin-bottom: 8.3rem;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+}
